@@ -18,3 +18,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
   - Generar un login con credenciales 
     - Usuario: user
     - Password: root
+
+## Librerías adicionales
+  - Sweet Alert
+  - Bootstrap 5

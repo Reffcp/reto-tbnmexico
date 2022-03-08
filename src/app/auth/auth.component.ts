@@ -1,3 +1,5 @@
+import { User } from './../core/models/user.interface';
+import { SweetalertService } from './../core/services/sweetalert.service';
 import { ResponseApiLogin } from './../core/models/response.interface';
 import { AuthService } from './../core/services/auth.service';
 import { Component, OnInit } from '@angular/core';
@@ -16,7 +18,8 @@ export class AuthComponent implements OnInit {
   constructor(
     private form: FormBuilder,
     private router: Router,
-    private authService: AuthService
+    private authService: AuthService,
+    private sweetAlert: SweetalertService
   ) {}
 
   ngOnInit(): void {
@@ -53,10 +56,31 @@ export class AuthComponent implements OnInit {
         if (respuesta.length > 0) {
           if (respuesta[0].success) {
             this.authService.logged = true;
+            localStorage.setItem(
+              'credentials',
+              JSON.stringify({
+                username: this.loginForm.value.username,
+                password: this.loginForm.value.password,
+              })
+            );
+            const usuario: Array<User> = [
+              {
+                id: new Date().getTime(),
+                name: 'Cristian Covarrubis',
+                username: 'reffcp',
+                email: 'ccovarrubias886@gmail.com',
+                phone: '+523151009324',
+              },
+            ];
+            this.sweetAlert.basicAlert(
+              'Bienvenido',
+              `Has iniciado sesión como ${usuario[0].name}`
+            );
             this.loginForm.reset();
             this.router.navigate(['/inicio']);
           } else {
-            alert(respuesta[0].msg);
+            // alert(respuesta[0].msg);
+            this.sweetAlert.basicAlertError('Error', respuesta[0].msg);
           }
         }
       });
