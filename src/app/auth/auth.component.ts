@@ -52,6 +52,7 @@ export class AuthComponent implements OnInit {
       .subscribe((respuesta: ResponseApiLogin[]) => {
         if (respuesta.length > 0) {
           if (respuesta[0].success) {
+            this.authService.logged = true;
             this.loginForm.reset();
             this.router.navigate(['/inicio']);
           } else {

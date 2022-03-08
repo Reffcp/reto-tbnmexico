@@ -5,6 +5,7 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root',
 })
 export class AuthService {
+  logged = false;
   constructor() {}
 
   //metodo para iniciar sesion

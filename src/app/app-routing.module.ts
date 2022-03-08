@@ -1,3 +1,4 @@
+import { UserBasicGuard } from './core/guards/user-basic.guard';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
@@ -19,6 +20,7 @@ const routes: Routes = [
         path: 'inicio',
         loadChildren: () =>
           import('./modules/home/home.module').then((m) => m.HomeModule),
+        canActivate: [UserBasicGuard],
       },
     ],
   },
