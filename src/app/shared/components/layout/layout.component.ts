@@ -15,17 +15,17 @@ export class LayoutComponent implements OnInit {
     {
       icon: 'set_meal',
       text: 'Ingredientes Populares',
-      link: '/ingredientes-populares',
+      link: 'ingredientes-populares',
     },
     {
       icon: 'ramen_dining',
       text: 'Platillos',
-      link: '/platillos',
+      link: 'platillos',
     },
     {
       icon: 'account_circle',
       text: 'Perfil',
-      link: '/mi-perfil',
+      link: 'mi-perfil',
     },
   ];
 

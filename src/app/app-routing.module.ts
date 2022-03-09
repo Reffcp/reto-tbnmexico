@@ -19,7 +19,7 @@ const routes: Routes = [
       {
         path: 'inicio',
         loadChildren: () =>
-          import('./modules/home/home.module').then((m) => m.HomeModule),
+          import('./modules/home.module').then((m) => m.HomeModule),
         // canActivate: [UserBasicGuard],
       },
     ],
