@@ -2,6 +2,9 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
+# App desplegada en
+ - https://prueba-web-mexico.web.app/index.html
+
 ## Puntos cubiertos de la prueba
 
 - Buenas practicas
