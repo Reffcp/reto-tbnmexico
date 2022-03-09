@@ -10,7 +10,7 @@ export class LayoutComponent implements OnInit {
     {
       icon: 'house',
       text: 'Home',
-      link: '/',
+      link: '/inicio',
     },
     {
       icon: 'set_meal',
