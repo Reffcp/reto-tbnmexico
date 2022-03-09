@@ -1,3 +1,4 @@
+import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
 import { PlatillosPorIngredienteComponent } from './platillos-por-ingrediente/platillos-por-ingrediente.component';
 import { PlatillosComponent } from './platillos/platillos.component';
 import { DetallePlatilloComponent } from './detalle-platillo/detalle-platillo.component';
@@ -31,6 +32,10 @@ const routes: Routes = [
       {
         path: 'platillos-por-ingrediente/:id',
         component: PlatillosPorIngredienteComponent,
+      },
+      {
+        path: 'mi-perfil',
+        component: MiPerfilComponent,
       },
     ],
   },

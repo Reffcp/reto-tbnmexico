@@ -13,6 +13,7 @@ import { HomeComponent } from './home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { PlatillosComponent } from './platillos/platillos.component';
 import { PlatillosPorIngredienteComponent } from './platillos-por-ingrediente/platillos-por-ingrediente.component';
+import { MiPerfilComponent } from './mi-perfil/mi-perfil.component';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { PlatillosPorIngredienteComponent } from './platillos-por-ingrediente/pl
     IngredientesPopularesComponent,
     PlatillosComponent,
     PlatillosPorIngredienteComponent,
+    MiPerfilComponent,
   ],
   imports: [
     CommonModule,

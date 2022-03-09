@@ -1,0 +1,32 @@
+<div
+  class="container-expand p-5 row pt-4 text-center d-flex justify-content-center"
+>
+  <div class="row col-12">
+    <h2>Perfil de Usuario</h2>
+  </div>
+  <div class="row col-12 justify-content-center">
+    <div>
+      <span>@{{ usuario.username }}</span>
+    </div>
+    <div>
+      {{ usuario.name }}
+    </div>
+    <button class="col-4" (click)="cerrarSesion()">Cerrar Sesión</button>
+  </div>
+  <div class="row col-10">
+    <h2>Datos Usuario</h2>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>Nombre(s)</mat-label>
+      <input matInput disabled [(ngModel)]="usuario.name" />
+    </mat-form-field>
+
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>Correo Electrónico</mat-label>
+      <input matInput disabled [(ngModel)]="usuario.email" />
+    </mat-form-field>
+    <mat-form-field class="form-field" appearance="outline">
+      <mat-label>Teléfono</mat-label>
+      <input matInput disabled [(ngModel)]="usuario.phone" />
+    </mat-form-field>
+  </div>
+</div>
