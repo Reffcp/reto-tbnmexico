@@ -1,3 +1,5 @@
+import { IngredientesService } from './../core/services/ingredientes.service';
+import { IngredientesPopularesComponent } from './ingredientes-populares/ingredientes-populares.component';
 import { DetallePlatilloComponent } from './detalle-platillo/detalle-platillo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -8,8 +10,12 @@ import { HomeComponent } from './home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
-  declarations: [HomeComponent, DetallePlatilloComponent],
+  declarations: [
+    HomeComponent,
+    DetallePlatilloComponent,
+    IngredientesPopularesComponent,
+  ],
   imports: [CommonModule, HomeRoutingModule, SharedModule, HttpClientModule],
-  providers: [PlatillosService],
+  providers: [PlatillosService, IngredientesService],
 })
 export class HomeModule {}
