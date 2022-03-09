@@ -1,0 +1,34 @@
+<div class="container pt-4">
+  <div class="row d-flex justify-content-center">
+    <div class="col-10">
+      <mat-card style="max-width: 400px">
+        <mat-card-header>
+          <div mat-card-avatar>
+            <mat-icon>dinner_dining</mat-icon>
+          </div>
+          <mat-card-title>{{ platillo.strMeal }}</mat-card-title>
+          <mat-card-subtitle>Platillo del día</mat-card-subtitle>
+        </mat-card-header>
+        <img
+          mat-card-image
+          [src]="platillo.strMealThumb"
+          [alt]="platillo.strMeal"
+          width="100%"
+        />
+        <mat-card-content>
+          <p>
+            {{ recortarTexto(platillo.strInstructions) }}
+          </p>
+        </mat-card-content>
+        <mat-card-actions class="text-end">
+          <button
+            mat-button
+            [routerLink]="['detalle-platillo', platillo.idMeal]"
+          >
+            Ver receta completa
+          </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+</div>

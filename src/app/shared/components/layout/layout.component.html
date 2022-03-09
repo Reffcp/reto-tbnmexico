@@ -1,0 +1,50 @@
+<mat-drawer-container class="contenedor m-0 p-0 container-expand" autosize>
+  <mat-drawer #drawer class="sidenav" mode="side" [opened]="openDraw">
+    <div class="row" style="min-height: 50px">
+      <div class="col-6">
+        <button
+          mat-icon-button
+          (click)="openMenu()"
+          aria-label="close menu"
+          class="col-12 button-open-menu"
+        >
+          <mat-icon>clear</mat-icon>
+        </button>
+      </div>
+      <div class="col-6 text-end">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/800px-Flag_of_Mexico.svg.png"
+          alt=""
+          srcset=""
+          width="80%"
+        />
+      </div>
+    </div>
+    <div class="user">
+      <img src="../../../../assets/icons/person.png" alt="user-img" />
+      <h2>Cristian Covarrubias</h2>
+      <p>Usuario</p>
+    </div>
+    <div class="menu-elements">
+      <div *ngFor="let element of menuElements">
+        <a [routerLink]="[element.link]">
+          <p>
+            <mat-icon aria-hidden="false" aria-label="drive_eta">{{
+              element.icon
+            }}</mat-icon>
+            {{ element.text }}
+          </p>
+        </a>
+      </div>
+    </div>
+  </mat-drawer>
+  <button
+    mat-icon-button
+    (click)="openMenu()"
+    *ngIf="!openDraw"
+    class="button-open-menu"
+  >
+    <mat-icon>menu</mat-icon>
+  </button>
+  <router-outlet></router-outlet>
+</mat-drawer-container>

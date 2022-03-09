@@ -1,0 +1,124 @@
+<div
+  class="container-expand p-5 row pt-4 text-center d-flex justify-content-center align"
+>
+  <div class="row col-12 bg-white rounded m-3 p-0">
+    <div class="col-2 p-0">
+      <img [src]="platillo.strMealThumb" width="100%" />
+    </div>
+    <div class="col-9 d-flex align-items-center">
+      <h2>{{ platillo.strMeal }}</h2>
+    </div>
+  </div>
+
+  <div class="row col-12 bg-white rounded m-3">
+    <div class="col-12">
+      <h2>Ingredientes</h2>
+    </div>
+    <div class="col-12 col-md-4">
+      <ul>
+        <li *ngIf="platillo.strIngredient1 != ''">
+          {{ platillo.strIngredient1 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient4 != ''">
+          {{ platillo.strIngredient4 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient7 != ''">
+          {{ platillo.strIngredient7 }}
+        </li>
+        <li *ngIf="platillo.strIngredient10 != ''">
+          {{ platillo.strIngredient10 }}
+        </li>
+        <li *ngIf="platillo.strIngredient13 != ''">
+          {{ platillo.strIngredient13 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient16 != ''">
+          {{ platillo.strIngredient16 }}
+        </li>
+        <li *ngIf="platillo.strIngredient19 != ''">
+          {{ platillo.strIngredient19 }}
+        </li>
+      </ul>
+    </div>
+    <div class="ol-12 col-md-4">
+      <ul>
+        <li *ngIf="platillo.strIngredient2 != ''">
+          {{ platillo.strIngredient2 }}
+        </li>
+        <li *ngIf="platillo.strIngredient5 != ''">
+          {{ platillo.strIngredient5 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient8 != ''">
+          {{ platillo.strIngredient8 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient11 != ''">
+          {{ platillo.strIngredient11 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient14 != ''">
+          {{ platillo.strIngredient14 }}
+        </li>
+        <li *ngIf="platillo.strIngredient17 != ''">
+          {{ platillo.strIngredient17 }}
+        </li>
+        <li *ngIf="platillo.strIngredient20 != ''">
+          {{ platillo.strIngredient20 }}
+        </li>
+      </ul>
+    </div>
+    <div class="ol-12 col-md-4">
+      <ul>
+        <li *ngIf="platillo.strIngredient3 != ''">
+          {{ platillo.strIngredient3 }}
+        </li>
+        <li *ngIf="platillo.strIngredient6 != ''">
+          {{ platillo.strIngredient6 }}
+        </li>
+        <li *ngIf="platillo.strIngredient9 != ''">
+          {{ platillo.strIngredient9 }}
+        </li>
+        <li *ngIf="platillo.strIngredient12 != ''">
+          {{ platillo.strIngredient12 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient15 != ''">
+          {{ platillo.strIngredient15 }}
+        </li>
+
+        <li *ngIf="platillo.strIngredient18 != ''">
+          {{ platillo.strIngredient18 }}
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="row col-12 bg-white rounded m-3 p-2">
+    <div class="col-12">
+      <h2>Instrucciones</h2>
+    </div>
+    <div class="col-12 text-start">
+      {{ platillo.strInstructions }}
+    </div>
+  </div>
+
+  <div class="row col-12 bg-white rounded m-3 p-2">
+    <div class="col-12">
+      <h2>Video</h2>
+    </div>
+    <div class="col-12 text-start">
+      <iframe
+        width="560"
+        height="315"
+        [src]="platillo.strYoutube"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+</div>

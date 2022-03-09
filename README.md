@@ -1,27 +1,53 @@
-# Challenge
+# Challenge By TBN Mexico
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.3.
 
-## Development server
+## Puntos cubiertos de la prueba
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+- Buenas practicas
+- Routing
+- Guardianes
+- Material for Angular
+- Directivas
+- Componentes
+- Módulos
+- Ambiente de desarrollo y pruebas
 
-## Code scaffolding
+## Puntos resueltos
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Generar un login con credenciales
 
-## Build
+  - Usuario: user
+  - Password: root
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Bienvenida
 
-## Running unit tests
+  - Al iniciar sesión deberá mostrar una pantalla de bienvenida con un platillo
+    aleatorio simulando que es el platillo del día (Modal o Alerta) al darle clic al platillo nos
+    tiene que re-dirigir a una pantalla que muestra el detalle del platillo (considerar la
+    información relevante como imágenes, video, texto, etc....)
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Ingredientes populares
 
-## Running end-to-end tests
+  - Al ingresar al menú de ingredientes Populares, mostrar la lista de
+    los ingredientes más populares y al dar clic a un ingrediente, mostrar los platillos que
+    contiene el ingrediente seleccionado en otra pantalla y a su vez al dar clic al platillo que
+    muestra el detalle del platillo
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Platillos
 
-## Further help
+  - Al ingresar al menú de platillos mostrar una lista de platillos, es importante que también consideres agregar opciones para filtrar y buscar platillos, deveras ocupar los filtros disponibles en la API. Al dar clic a un platillo, deberás mandarlo a la ventana de detalle del platillo.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  - También deberás crear un carrusel que muestren 5 platillos aleatorios, que deberá
+    cambiar en automático cada 5 min y al seleccionar un platillo aleatorio deberás mandarlo
+    a la ventana del detalle del platillo.
+
+- Perfil del usuario
+
+  - Esta sección muestra la información del perfil (si gustas con tus datos) y
+    un botón para cerrar sesión
+
+## Librerías adicionales
+
+- Sweet Alert
+- Bootstrap 5

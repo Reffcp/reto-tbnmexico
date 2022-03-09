@@ -1,0 +1,48 @@
+<div class="container-expand text-center">
+  <form [formGroup]="loginForm" (submit)="login()">
+    <img
+      class="mb-4"
+      src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Flag_of_Mexico.svg/800px-Flag_of_Mexico.svg.png"
+      alt=""
+      width="50%"
+      height="auto"
+    />
+    <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
+
+    <div class="form-floating">
+      <input
+        type="email"
+        class="form-control"
+        id="floatingInput"
+        placeholder="username"
+        formControlName="username"
+      />
+      <label for="floatingInput">Usuario</label>
+    </div>
+    <div class="form-floating">
+      <input
+        type="password"
+        class="form-control"
+        id="floatingPassword"
+        placeholder="Password"
+        formControlName="password"
+      />
+      <label for="floatingPassword">Contraseña</label>
+    </div>
+
+    <div class="checkbox mb-3">
+      <label>
+        <input
+          type="checkbox"
+          value="remember-me"
+          formControlName="saveSession"
+        />
+        Mantener mi sesión iniciada
+      </label>
+    </div>
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+    <p class="mt-5 mb-3 text-muted">
+      © by <a href="https://cristiancovarrubias.online">reffcp</a>
+    </p>
+  </form>
+</div>
