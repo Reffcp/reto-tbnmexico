@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "prueba-web-mexico",
     "public": "dist",
     "ignore": [
       "firebase.json",
