@@ -1,3 +1,4 @@
+import { PlatillosComponent } from './platillos/platillos.component';
 import { DetallePlatilloComponent } from './detalle-platillo/detalle-platillo.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -21,6 +22,10 @@ const routes: Routes = [
       {
         path: 'ingredientes-populares',
         component: IngredientesPopularesComponent,
+      },
+      {
+        path: 'platillos',
+        component: PlatillosComponent,
       },
     ],
   },
