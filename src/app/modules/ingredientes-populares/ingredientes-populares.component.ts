@@ -39,5 +39,7 @@ export class IngredientesPopularesComponent implements OnInit {
   cambiarTamanioMenu(evt: string): void {
     this.estadoMenu = evt;
   }
-  mostrarPlatillos(nombre: string): void {}
+  mostrarPlatillos(nombre: string): void {
+    this.router.navigate(['inicio/platillos-por-ingrediente', nombre]);
+  }
 }

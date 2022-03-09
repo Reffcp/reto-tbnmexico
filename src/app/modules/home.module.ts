@@ -12,6 +12,7 @@ import { PlatillosService } from 'src/app/core/services/platillos.service';
 import { HomeComponent } from './home/home.component';
 import { HomeRoutingModule } from './home-routing.module';
 import { PlatillosComponent } from './platillos/platillos.component';
+import { PlatillosPorIngredienteComponent } from './platillos-por-ingrediente/platillos-por-ingrediente.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { PlatillosComponent } from './platillos/platillos.component';
     DetallePlatilloComponent,
     IngredientesPopularesComponent,
     PlatillosComponent,
+    PlatillosPorIngredienteComponent,
   ],
   imports: [
     CommonModule,

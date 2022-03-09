@@ -117,8 +117,4 @@ export class PlatillosComponent implements OnInit {
     this.ingredientes = '';
     this.obtenerPlatillos();
   }
-
-  verDetalle(id: string): void {
-    this.router.navigate(['/detalle-platillo', id]);
-  }
 }

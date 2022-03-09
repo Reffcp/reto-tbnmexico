@@ -1,3 +1,4 @@
+import { PlatillosPorIngredienteComponent } from './platillos-por-ingrediente/platillos-por-ingrediente.component';
 import { PlatillosComponent } from './platillos/platillos.component';
 import { DetallePlatilloComponent } from './detalle-platillo/detalle-platillo.component';
 import { NgModule } from '@angular/core';
@@ -26,6 +27,10 @@ const routes: Routes = [
       {
         path: 'platillos',
         component: PlatillosComponent,
+      },
+      {
+        path: 'platillos-por-ingrediente/:id',
+        component: PlatillosPorIngredienteComponent,
       },
     ],
   },

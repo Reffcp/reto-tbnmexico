@@ -70,7 +70,7 @@
       <tr
         mat-row
         *matRowDef="let row; columns: columnas; let element"
-        (click)="verDetalle(element.idMeal)"
+        [routerLink]="['/inicio/detalle-platillo', element.idMeal]"
       ></tr>
     </table>
     <mat-paginator
