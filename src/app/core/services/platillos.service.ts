@@ -14,4 +14,9 @@ export class PlatillosService {
   getPlatilloAleatorio() {
     return this.http.get<any>(`${this.api}random.php`);
   }
+
+  //metodo para obtener un platillo por id
+  getPlatillo(id: number) {
+    return this.http.get<any>(`${this.api}lookup.php?i=${id}`);
+  }
 }

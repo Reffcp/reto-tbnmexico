@@ -21,7 +21,12 @@
           </p>
         </mat-card-content>
         <mat-card-actions class="text-end">
-          <button mat-buttom>Continuar leyendo</button>
+          <button
+            mat-button
+            [routerLink]="['detalle-platillo', platillo.idMeal]"
+          >
+            Ver receta completa
+          </button>
         </mat-card-actions>
       </mat-card>
     </div>

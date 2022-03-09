@@ -1,3 +1,4 @@
+import { DetallePlatilloComponent } from './../detalle-platillo/detalle-platillo.component';
 import { HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -7,7 +8,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
 import { PlatillosService } from 'src/app/core/services/platillos.service';
 
 @NgModule({
-  declarations: [HomeComponent],
+  declarations: [HomeComponent, DetallePlatilloComponent],
   imports: [CommonModule, HomeRoutingModule, SharedModule, HttpClientModule],
   providers: [PlatillosService],
 })
